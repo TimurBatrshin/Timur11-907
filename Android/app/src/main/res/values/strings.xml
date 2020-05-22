@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="text">email</string>
+    <string name="text3">email :</string>
+    <string name="email">Введите email</string>
+    <string name="text2">Пароль</string>
+    <string name="password">Введите пароль</string>
+    <string name="name">Имя :</string>
+    <string name="LastName">Фамилия :</string>
+</resources>
