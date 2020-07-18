@@ -14,27 +14,37 @@
 		}
 	</style>
 </head>
+<script>
+	butt.onclick = function() {
+		var val1 = document.getElementById('inp1').value,
+		val2 = document.getElementById('inp2').value,
+		val3 = document.getElementById('inp3').value,
+		val4 = document.getElementById('inp4').value;
+		document.getElementById('str').innerHTML = "Вы ввели: " + val1 + " " + val2 + " " + val3 + " "+ val4;
+	};
+</script>
 <body>
 	<header style="background-color: #BA55D3">
   	<div>Расскажите не много о себе и своем опыте работы</div>
-  </div>
 	</header>
 	<main>
 		<div class="panel-heading">Ваши лучшие и худшие  качества</div>
-		<input type="text" placeholder="Заполните форму">
+        <label for="inp1"></label><input type="text" placeholder="Заполните форм" id="inp1">
 
 		<div class="panel-heading">Расскажите о своем опыте работы</div>
-		<input type="text" placeholder="Заполните форму">
+        <label for="inp2"></label><input type="text" placeholder="Заполните форму" id="inp2">
 
 		<div class="panel-heading">Почему мы должны взять именно вас ?</div>
-		<input type="text" placeholder="Заполните форму">
+        <label for="inp3"></label><input type="text" placeholder="Заполните форму" id="inp3">
 
 		<div class="panel-heading">Постройте дерево)</div>
-		<input type="text" placeholder="Заполните форму">
+        <label for="inp4"></label><input type="text" placeholder="Заполните форму" id="inp4">
 	</main>
 	<p></p>
 	<form action="file:///C:/Users/Timur/Desktop/Java_lab/Java_pr/NodeJsServer/public/End.html">
 		<button type="submit" style="background-color: #00FF00 ">Выполнено</button>
 	</form>
+	<input id="butt" type="button" value="Проверите правильность ваших данных" /><br><br>
+	<div id="str"></div>
 </body>
 </html>
